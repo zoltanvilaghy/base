@@ -67,8 +67,8 @@ public class TrainSystemTest {
 
 		sensor.overrideSpeedLimit(5);
 
-		Assert.assertEquals(10, controller.getReferenceSpeed());
-		
+		Assert.assertEquals(5, controller.getReferenceSpeed());
+
 		controller.followSpeed();
 		Assert.assertEquals(5, controller.getReferenceSpeed());
 		controller.followSpeed();
