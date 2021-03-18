@@ -1,5 +1,10 @@
-subprojects {
+plugins {
+  id 'jacoco'
+}
+
+subprojects { subproject ->
   apply plugin: 'java'
+  apply plugin: 'jacoco'
 
   repositories {
     jcenter()
